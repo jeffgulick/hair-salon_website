@@ -60,12 +60,17 @@ header {
 img {
     width: 100%;
 }
+
 nav {
     padding-top: 10pt;
     width: 40%;
     margin-bottom: 10pt;
     margin-top: 25pt;
     height: 50%;
+    color: black;
+}
+
+#navigation {
     color: black;
 }
 
