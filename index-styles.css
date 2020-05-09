@@ -1,9 +1,12 @@
 body {
-    width: 100%;
+    /* width: 100%; */
+    width: 100wv;
     margin-top: 20pt;
+    margin-left: 0;
+    margin-right: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .3fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr 1fr .75fr .2fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -16,10 +19,10 @@ body {
 .text_block {
     margin-top: 45pt;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    justify-content: flex-end;
     grid-area: text;
     grid-row: 2/3;
+    margin-right: 50pt;
 }
 
 h2 {
@@ -31,7 +34,7 @@ h2 {
     background-color: white;
 }
 
-p {
+div > p {
     background-color: #252525;
     color: white;
     display: block;
@@ -44,25 +47,34 @@ p {
     padding-left: 10pt;
 }
 
-.read {
+#read {
     background-color: #0BA39C;
-    height: 100pt;
-}
-
-.read:link {
     color: white;
-    height: 100pt;
-
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-/* .father {
-    grid-area: father;
-    grid-row: 3/4;
-} */
+#read:link {
+    color: white;
+}
 
 main {
     grid-area: main;
     grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    margin-top: 20pt;
+}
+
+main p {
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 8pt;
+    font-weight: bold;
+    color: black;
 }
 
 .main {
@@ -70,25 +82,19 @@ main {
     grid-row: 2/3;
 }
 
-.main_words {
-    grid-area: words;
-    grid-row: 2/3;
-}
-
-/* .actor {
-    grid-area: actor;
-    grid-row: 3/4;
-} */
-
-/* .nerd {
-    grid-area: nerd;
-    grid-row: 3/4;
-} */
 
 footer {
     border: 2pt solid;
     grid-area: footer;
     grid-row: 4/5;
+    width: 100%;
+    /* width: 100vw; */
+    background-color: #252525;
+}
+
+
+footer > a:link {
+    color: white;
 }
 
 header {
@@ -100,8 +106,6 @@ header {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-
-
 }
 
 img {
@@ -135,13 +139,8 @@ ul {
     height: 50%;
 }
 
-.main {
-    width: 100%;
-    height: 40%;
-}
-
-main {
-    display: flex;
+#picture {
+    border: 1.5pt solid #484848;
 }
 
 .father {
