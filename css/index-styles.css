@@ -198,8 +198,26 @@ img {
     .text_block {
         grid-row: 2/3;
         opacity: 0.6;
+        font-size: 1em;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        grid-area: text;
     }
 
+    #read {
+        background-color: #0BA39C;
+        color: white;
+        padding: 1em 1em;
+        text-decoration: none;
+        width: 55pt;
+        /* text-transform: uppercase; */
+    }
+
+    .last_p {
+        margin-bottom: 8pt;
+    }    
+    
     nav {
         width: 60%;
     }
@@ -216,16 +234,6 @@ img {
     main {
         display: flex;
         flex-direction: column;
-    }
-
-    .text_block {
-        /* margin-top: 45pt; */
-        font-size: 1em;
-        display: grid;
-        justify-self: center;
-        align-self: center;
-        grid-area: text;
-        /* margin-right: 50pt; */
     }
 
     .text_block h2 {
