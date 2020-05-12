@@ -21,13 +21,13 @@ header {
 
 nav {
     padding-top: 10pt;
-    width: 40%;
+    width: 30%;
     margin-bottom: 10pt;
     margin-top: 25pt;
     height: 50%;
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0;
     margin-top: 30pt;
     font-size: 1.3em;
@@ -42,6 +42,7 @@ a {
 }
 /* footer styles */
 footer {
+    height: 90pt;
     grid-area: footer;
     display: grid;
     grid-row: 4/5;
@@ -58,6 +59,7 @@ footer {
     grid-area: copy;
     align-self: center;
     justify-self: center;
+    font-size: 1em;
 }
 
 .social_media {
@@ -83,8 +85,9 @@ footer {
     color: white;
 }
 
-img {
+.pic {
     border: 2pt solid black;
+    width: 100%;
 }
 
 h1 {
@@ -97,17 +100,64 @@ h1 {
     padding-top: 10pt;
     padding-left: 15pt;
     padding-right: 15pt;
-    height: 40pt;
+    height: 35pt;
+    margin-top: 30pt;
 }
 
-.one {
-    text-align: center;
+p {
+    font-weight: lighter;
 }
 
-.two {
+.one, .two, .three {
     text-align: center;
+    padding-left: 275pt;
+    padding-right: 275pt;
 }
 
-.three {
-    text-align: center;
+@media (max-width: 576px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic-section {
+        width: 90%;
+        padding-right: 30pt;
+        padding-left: 30pt;
+    }
+    .pic {
+        width: 100%;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        height: 25pt;
+    }
+
+    .one, .two, .three {
+        padding-left: 25pt;
+        padding-right: 25pt;
+    }
+
+    nav {
+        width: 55%;
+        font-size: 1em;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .fab {
+        padding: 10pt;
+        font-size: 20pt;
+        width: 20pt;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+
 }
