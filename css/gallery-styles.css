@@ -1,0 +1,80 @@
+body {
+    width: 100vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    grid-area: header;
+    grid-row: 1/2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    padding-top: 10pt;
+    width: 30%;
+    margin-bottom: 10pt;
+    margin-top: 25pt;
+    height: 50%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 30pt;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+/* footer styles */
+footer {
+    height: 90pt;
+    grid-area: footer;
+    display: grid;
+    grid-row: 4/5;
+    width: 100%;
+    color: white;
+    background-color: #252525;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "copy social";
+}
+
+.copy {
+    grid-area: copy;
+    align-self: center;
+    justify-self: center;
+    font-size: 1em;
+}
+
+.social_media {
+    grid-area: social;
+    align-self: center;
+    justify-self: center;
+}
+
+.fab {
+    padding: 10pt;
+    font-size: 30pt;
+    width: 50pt;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.fab:link {
+    color: white;
+}
+
+.fab:active {
+    color: white;
+}

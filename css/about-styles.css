@@ -30,7 +30,8 @@ nav {
     justify-content: space-between;
     margin-bottom: 0;
     margin-top: 30pt;
-    font-size: 1.3em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 a:link {
@@ -112,6 +113,10 @@ p {
     text-align: center;
     padding-left: 275pt;
     padding-right: 275pt;
+}
+
+.three {
+    margin-bottom: 20pt;
 }
 
 @media (max-width: 576px) {
