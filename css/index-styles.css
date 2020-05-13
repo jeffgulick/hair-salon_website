@@ -35,7 +35,19 @@ nav {
 }
 
 a:link {
-    color: black;
+    color: #252525;
+}
+
+/* a:visited {
+    color: #252525;
+} */
+
+a:hover {
+    color: #0BA39C;
+}
+
+a:active {
+    color: #0BA39C;
 }
 
 a {
