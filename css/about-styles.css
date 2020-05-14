@@ -21,7 +21,7 @@ header {
 
 nav {
     padding-top: 10pt;
-    width: 30%;
+    width: 40%;
     margin-bottom: 10pt;
     margin-top: 25pt;
     height: 50%;
@@ -123,15 +123,15 @@ p {
 
 .one, .two, .three {
     text-align: center;
-    padding-left: 275pt;
-    padding-right: 275pt;
+    padding-left: 150pt;
+    padding-right: 150pt;
 }
 
 .three {
     margin-bottom: 20pt;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
 
     body {
         display: flex;
@@ -159,7 +159,7 @@ p {
     }
 
     nav {
-        width: 55%;
+        width: 60%;
         font-size: 1em;
     }
 
@@ -177,4 +177,15 @@ p {
     }
     
 
+}
+
+@media (max-width: 800px) {
+    .one, .two, .three {
+        padding-left: 25pt;
+        padding-right: 25pt;
+    }
+
+    nav {
+        width: 65%;
+    }
 }

@@ -5,6 +5,14 @@ body {
     margin-bottom: 20pt;
     margin-left: 0;
     margin-right: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 
 header {
@@ -28,6 +36,24 @@ nav {
     margin-bottom: 0;
     margin-top: 30pt;
     font-size: 1.3em;
+}
+
+h1 {
+    justify-self: center;
+}
+main {
+    display: grid;
+    grid-area: main;
+    justify-self: center;
+}
+
+form {
+    justify-self: center;
+    width: 100%;
+}
+
+#name {
+    width: 100%;
 }
 
 a:link {
