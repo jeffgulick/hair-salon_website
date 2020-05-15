@@ -27,7 +27,7 @@ nav {
     /* padding-top: 10pt; */
     width: 40%;
     margin-bottom: 10pt;
-    margin-top: 25pt;
+    margin-top: 20pt;
     height: 50%;
     color: black;
     display: flex;
@@ -68,6 +68,7 @@ h1 {
 }
 
 main {
+    margin-top: 20pt;
     grid-area: main;
     justify-self: center;
     display: grid;

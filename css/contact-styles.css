@@ -51,6 +51,7 @@ h1 {
     width: 100%;
 }
 main {
+    margin-top: 20pt;
     display: grid;
     grid-area: main;
     justify-self: center;
