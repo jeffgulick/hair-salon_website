@@ -20,14 +20,14 @@ header {
 }
 
 nav {
-    padding-top: 10pt;
+    /* padding-top: 10pt; */
     width: 40%;
     margin-bottom: 10pt;
     margin-top: 25pt;
     height: 50%;
     color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 0;
     margin-top: 30pt;
     font-size: 1.3em;
@@ -159,8 +159,8 @@ p {
     }
 
     nav {
-        width: 60%;
-        font-size: 1em;
+        width: 70%;
+        justify-content: space-between;
     }
 
     footer {
@@ -186,6 +186,7 @@ p {
     }
 
     nav {
-        width: 65%;
+        width: 60%;
+        justify-content: space-between;
     }
 }
