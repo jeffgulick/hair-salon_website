@@ -111,6 +111,16 @@ minor-title {
     font-size: 1.5em;  
 }
 
+.picture a:hover {
+    opacity: .7;
+}
+
+.words a:hover {
+    color: #0BA39C;
+    background-color: white;
+    border: 1.5pt solid #252525;
+}
+
 @media (max-width: 850px) {
     article {
         display: flex;

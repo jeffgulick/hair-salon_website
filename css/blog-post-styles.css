@@ -6,3 +6,19 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+
+h1 {
+    text-align: center;
+    background-color: #252525;
+    font-family: 'Poller One', cursive;
+    color: white;
+    width: 70%;
+    justify-self: center;
+
+}
+
+main {
+    margin-left: 30pt;
+    margin-right: 30pt;
+    display: grid;
+}
