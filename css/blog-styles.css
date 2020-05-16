@@ -5,6 +5,22 @@ body {
     margin-bottom: 20pt;
     margin-left: 0;
     margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
 }
 
 article {
@@ -51,12 +67,14 @@ img {
     align-self: center;
     font-size: 1em;
     font-family: 'Poller One', cursive;
+    margin-bottom: 10pt;
 }
 
 main {
     margin-top: 30pt;
     justify-content: center;
     align-content: center;
+    grid-area: main;
     display: grid;
     row-gap: 10pt;
     row-gap: 10pt;
@@ -91,4 +109,52 @@ main {
 minor-title {
     font-family: 'Poller One', cursive;
     font-size: 1.5em;  
+}
+
+@media (max-width: 850px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    main {
+        align-self: center;
+        justify-self: center;
+        margin-left: 25pt;
+        margin-right: 25pt;
+    }
+
+    .words a {
+        background-color: #252525;
+        color: white;
+        padding: 1em 1.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 75pt;
+        display: grid;
+        align-self: center;
+        font-size: 1em;
+        font-family: 'Poller One', cursive;
+        margin-bottom: 20pt;
+    }   
+    
+    .main-title {
+        width: 100%;
+        height: 20pt;
+        font-size: 1.5em;
+        padding-bottom: 10pt;
+    }
+    
+    .picture {
+        border-bottom: none;
+    }
+
+    .words {
+        border-top: none;
+    }
 }
