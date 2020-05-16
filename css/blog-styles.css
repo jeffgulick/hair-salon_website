@@ -7,3 +7,88 @@ body {
     margin-right: 0;
 }
 
+article {
+    justify-self: center;
+    display: flex;
+    width: 70%;
+}
+
+.main-title {
+    font-size: 2em;
+    color: white;
+    font-family: 'Poller One', cursive;
+    background-color: #252525;
+    width: 20%;
+    text-align: center;
+    grid-area: main-title;
+    justify-self: center;
+    height: 35pt;
+    padding-top: 10pt;
+}
+
+.picture {
+    border: 1.5pt solid #252525;
+}
+
+.words {
+    border: 1.5pt solid #252525;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+img {
+    height: 100%;
+}
+
+.words a {
+    background-color: #252525;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100pt;
+    display: grid;
+    align-self: center;
+    font-size: 1em;
+    font-family: 'Poller One', cursive;
+}
+
+main {
+    margin-top: 30pt;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    row-gap: 10pt;
+    row-gap: 10pt;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "main-title"
+    "one"
+    "two"
+    "three";
+}
+
+.blog-1 {
+    grid-area: one;
+}
+
+.blog-2 {
+    grid-area: two;
+}
+
+.blog-3 {
+    grid-area: three;
+}
+
+.words {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+minor-title {
+    font-family: 'Poller One', cursive;
+    font-size: 1.5em;  
+}
