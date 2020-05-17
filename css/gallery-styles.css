@@ -50,12 +50,17 @@ main {
 }
 
 .gallery a:hover {
-    filter: brightness(120%);
+    /* filter: brightness(120%); */
     transform: scale(1.05);
 }
 
 #gallery-pic {
     border: 1.5pt solid #484848;
+    opacity: .8;
+}
+
+#gallery-pic:hover {
+    opacity: 1;
 }
 
 @media (max-width: 800px) {

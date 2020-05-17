@@ -112,7 +112,7 @@ minor-title {
 }
 
 .picture :hover {
-    filter: brightness(105%);
+    /* filter: brightness(105%); */
     transform: scale(1.05);
 }
 
