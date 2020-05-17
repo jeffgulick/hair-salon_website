@@ -28,11 +28,20 @@ a:visited {
     color: #252525;
 } */
 
-a:hover {
-    color: #0BA39C;
+#logo:hover {
+    transform: scale(1.2);
 }
 
-a:active {
+
+
+nav a:hover {
+    color: #0BA39C;
+    text-transform: uppercase;
+    transform: scale(1.2);
+    font-family: 'Poller One', cursive;
+}
+
+nav a:active {
     color: #0BA39C;
 }
 
@@ -78,6 +87,10 @@ footer {
     color: white;
 }
 
+.fab:hover {
+    font-size: 35pt;
+}
+
 .fab:link {
     color: white;
 }
@@ -88,6 +101,22 @@ footer {
 
 .fab:active {
     color: white;
+}
+
+#facebook:hover {
+    color: #435F9C;
+}
+
+#twitter:hover {
+    color: #1DA1F2;
+}
+
+#linkedin:hover {
+    color: #0077B5;
+}
+
+#pinterest:hover {
+    color: #E60023;
 }
 
 @media (max-width: 800px) {

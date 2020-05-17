@@ -111,8 +111,9 @@ minor-title {
     font-size: 1.5em;  
 }
 
-.picture a:hover {
-    opacity: .7;
+.picture :hover {
+    filter: brightness(105%);
+    transform: scale(1.05);
 }
 
 .words a:hover {

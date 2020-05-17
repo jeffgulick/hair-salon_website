@@ -50,7 +50,7 @@ main {
 }
 
 .gallery a:hover {
-    opacity: .9;
+    filter: brightness(120%);
     transform: scale(1.05);
 }
 
@@ -78,6 +78,7 @@ main {
     #gallery-pic {
         border: 1.5pt solid #484848;
     } 
+    
     
     .fab {
         padding: 10pt;
