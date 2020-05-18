@@ -175,4 +175,8 @@ button {
     color: white;
 }
 
+form {
+    width: 75%;
+}
+
 }
