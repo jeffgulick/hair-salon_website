@@ -6,6 +6,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     display: grid;
+    justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -22,20 +23,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-nav {
-    /* padding-top: 10pt; */
-    width: 40%;
-    margin-bottom: 10pt;
-    margin-top: 20pt;
-    height: 50%;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 0;
-    margin-top: 30pt;
-    font-size: 1.3em;
 }
 
 h1 {
@@ -66,76 +53,6 @@ form {
     width: 100%;
 }
 
-a:link {
-    color: #252525;
-}
-
-/* a:visited {
-    color: #252525;
-} */
-
-a:hover {
-    color: #0BA39C;
-}
-
-a:active {
-    color: #0BA39C;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* footer styles */
-footer {
-    height: 90pt;
-    margin-top: 20pt;
-    grid-area: footer;
-    display: grid;
-    grid-row: 4/5;
-    width: 100%;
-    color: white;
-    background-color: #252525;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "copy social";
-}
-
-.copy {
-    grid-area: copy;
-    align-self: center;
-    justify-self: center;
-    font-size: 1em;
-}
-
-.social_media {
-    grid-area: social;
-    align-self: center;
-    justify-self: center;
-}
-
-.fab {
-    padding: 10pt;
-    font-size: 30pt;
-    width: 50pt;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-.fab:link {
-    color: white;
-}
-
-.fab:visited {
-    color: white;
-}
-
-.fab:active {
-    color: white;
-}
-
 button {
     font-size: 1em;
     color: white;
@@ -144,39 +61,13 @@ button {
 }
 
 @media (max-width: 800px) {
-    nav {
-        width: 60%;
-        justify-content: space-between;
+
+    #name, #address, #email, #phone-number, #comments {
+        width: 95%;
     }
 
-
-.fab {
-    padding: 10pt;
-    font-size: 25pt;
-    width: 25pt;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-}
-
-@media (max-width: 600px) {
-    nav {
-        width: 70%;
+    h1 {
+        width: 90%;
     }
-
-
-.fab {
-    padding: 10pt;
-    font-size: 20pt;
-    width: 20pt;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-form {
-    width: 75%;
-}
 
 }
